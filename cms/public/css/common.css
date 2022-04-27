@@ -1,0 +1,302 @@
+/* 全体共通 */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Lato', 'Noto Sans JP', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333333;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.inner {
+  padding: 0 15px;
+}
+.heading, .sub-heading {
+  padding: 40px 0;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 0.25em;
+}
+.sub-heading span {
+  display: block;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+.section-text {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.item-syousai {
+  display: flex
+}
+
+/* ヒーローイメージ */
+.hero {
+  background: url("../images/imagtop.jpg") top center / cover no-repeat;
+  height: 90vw;
+}
+.hero .layer {
+  position: relative;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.logo {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+.drawer {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.drawer span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+.drawer span:first-of-type {
+  /*.drawer の中の一番初めのspanタグ*/
+  top: 20%;
+  left: 0;
+}
+.drawer span:nth-of-type(2) {
+  /*.drawer の中の２番目のspanタグ*/
+  top: 50%;
+  left: 0;
+}
+.drawer span:last-of-type {
+    /*.drawer の中の最後のspanタグ*/
+  top: 80%;
+  left: 0;
+}
+.hero .hero-item {
+  position: absolute;
+  right: 7%;
+  bottom: 7%;
+  color: #fff;
+}
+.hero .hero-text {
+  margin-bottom: 5px;
+}
+
+/* リード文 */
+.lead .heading {
+  padding: 30px 0 20px;
+  letter-spacing: 0;
+}
+.lead .section-text {
+  margin-bottom: 15px;
+  padding: 0 10px;
+  text-align: center;
+}
+.lead .section-text:last-of-type {
+  margin-bottom: 40px;
+}
+.images-wrap {
+  position: relative;
+  margin-bottom: 60px;
+}
+.images-wrap .section-image:first-of-type {
+  max-width: 220px;
+  margin-bottom: 30px;
+}
+.images-wrap .section-image:nth-of-type(2n) {
+  max-width: 140px;
+  margin-left: auto;
+  padding-right: 30px;
+}
+.images-wrap .section-image:last-of-type {
+  max-width: 80px;
+  margin-left: 30px;
+}
+
+/* 生産者情報 */
+.producer .heading {
+  padding: 10px;
+  font-size: 4rem;
+  border-bottom: 3px double #d4d4d4;
+}
+.producer .section-image {
+  margin-bottom: 20px;
+}
+
+.producer-info .wrap {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.producer-info .wrap.point {
+  display: block;
+}
+
+.producer-info dt {
+  margin-right: 10px;
+  
+}
+
+.wrap.point dt  {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.wrap.point dd {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+
+.procedure {
+  margin: 10px 0px 15px 0px ;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+.procedure .procedure-top{
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+
+/* 動画 */
+.movie {
+  position: relative;
+  margin-bottom: 15px;
+  padding-top: 56.25%;
+}
+.movie-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;;
+}
+
+.keywords{
+  font-size: 1.3rem;
+}
+
+/* .content共通 */
+.content {
+  margin-bottom: 60px;
+}
+.content .direction {
+  margin: 20px 0px;
+  
+}
+.content .caution {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+.form-btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #ab2912;
+  text-align: center;
+  color: #fff;
+}
+
+/* .content .movie-form */
+.content .movie-form {
+  margin-bottom: 50px;
+}
+.content .movie-form textarea.summary .keywords {
+  margin-bottom: 5px;
+}
+.content .movie-form textarea.summary { 
+  /*.content の中の .movie-formの中の 
+  .summaryというクラスがついたtextareaタグ*/
+  max-width: 355px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  border: 1px solid #d4d4d4;
+}
+
+
+/* .content .hidden-content */
+.hidden-content .product-title {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.hidden-content .product-price { 
+/*hidden-contentの中の.product-price*/
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  text-align: right;
+}
+
+
+.form-parts {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  padding: 3px;
+  border: 1px solid #d4d4d4;
+}
+/* footer */
+footer small {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background: url(../images/imagtop.jpg) center / cover no-repeat;
+    height: 40vw;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .hero-item .hero-text {
+    font-size: 3rem;
+  }
+  .hero-item .hero-heading {
+    font-size: 4rem;
+  }
+  .lead .heading {
+    padding: 100px 0 60px;
+    font-size: 5rem;
+  }
+  .images-wrap {
+    max-width: 500px;
+    margin: 0 auto 60px;
+  }
+  .images-wrap .section-image:first-of-type {
+    max-width: 300px;
+  }
+  .images-wrap .section-image:nth-of-type(2n) {
+    max-width: 200px;
+    padding: 0;
+  }
+  .images-wrap .section-image:last-of-type {
+    max-width: 150px;
+  }
+  .content .movie-form textarea.summary {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
